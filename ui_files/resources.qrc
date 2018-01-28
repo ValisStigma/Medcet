@@ -1,0 +1,34 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>buttonEditDisabled.png</file>
+    <file>buttomOfflineModeClicked.png</file>
+    <file>buttonEditModeClicked.png</file>
+    <file>buttonEditModeHover.png</file>
+    <file>buttonEditModePressed.png</file>
+    <file>buttonEditModeUnclicked.png</file>
+    <file>buttonMainMode.png</file>
+    <file>buttonMainModeClicked.png</file>
+    <file>buttonMainModeHover.png</file>
+    <file>buttonMainModePressed.png</file>
+    <file>buttonMainModeUnclicked.png</file>
+    <file>buttonOfflineModeClicked.png</file>
+    <file>buttonOfflineModePressed.png</file>
+    <file>buttonOfflineModeUnclicked.png</file>
+    <file>calendarIcon.png</file>
+    <file>logo_oceancare_2.png</file>
+    <file>oc-logo.png</file>
+    <file>OceanBackground.png</file>
+    <file>buttonEditModeUnclicked.png</file>
+    <file>buttonMainModeUnclicked.png</file>
+    <file>oc-logo.png</file>
+    <file>buttonEditModeClicked.png</file>
+    <file>buttonEditModeHover.png</file>
+    <file>buttonEditModeUnclicked.png</file>
+    <file>buttonMainModeClicked.png</file>
+    <file>buttonMainModeHover.png</file>
+    <file>buttonMainModeUnclicked.png</file>
+    <file>OceanBackground.png</file>
+    <file>logo_oceancare_2.png</file>
+    <file>calendarIcon.png</file>
+  </qresource>
+</RCC>

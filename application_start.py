@@ -1,8 +1,3 @@
-'''
-Created on 28.02.2014
-
-@author: Ausleihe
-'''
 import sys
 from PyQt4 import QtGui
 from PyQt4.QtCore import SIGNAL
@@ -15,9 +10,7 @@ from dialogs import NoDatabaseConnectionDialog
 
 
 class StartPoint(object):
-    '''
-    Class that instantiates the program
-    '''
+
     def __init__(self):
         self.main_frame = MainFrame()
         self.main_mode = None
@@ -58,15 +51,9 @@ class StartPoint(object):
         self.main_frame.show()
 
     def start_main_mode(self):
-        '''
-        starts the main mode
-        '''
         self.main_mode = MainMode(self.language_dict, self.database_handler, self.no_connection)
 
     def start_edit_mode(self):
-        '''
-        start the edit mode
-        '''
         if not self.no_connection:
             self.edit_mode = EditMode(self.language_dict, self.database_handler)
 

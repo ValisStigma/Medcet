@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
-'''
-Created on 27.05.2014
 
-@author: Ausleihe
-This modules stores all the dictionaries used
-by this program
-'''
 DICT_SEA = {
     u'0': 0,
     u'0-1': 1,

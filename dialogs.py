@@ -1,8 +1,6 @@
 #!/usr/local/bin/python2.7
 # encoding: utf-8
-'''
-This module stores all the handlers for GUI-objects
-'''
+
 from PyQt4 import QtGui
 from compiled_ui_files.noDataBaseConnection import Ui_NoDatabaseConnectionDialog
 from compiled_ui_files.calender import Ui_CalendarDialog
@@ -20,9 +18,6 @@ from compiled_ui_files.transectDeletionDialog import Ui_TransectDeletionDialog
 
 
 class MainFrame(QtGui.QDialog):
-    '''
-    GUI-window for main-mode
-    '''
     def __init__(self):
         QtGui.QDialog.__init__(self)
         # Set up the user interface from Designer.
@@ -31,9 +26,6 @@ class MainFrame(QtGui.QDialog):
 
 
 class NoDatabaseConnectionDialog(QtGui.QDialog):
-    '''
-    Warning for no database-connection GUI-window
-    '''
     def __init__(self, mainFrame):
         QtGui.QDialog.__init__(self, mainFrame)
         # Set up the user interface from Designer.
@@ -74,9 +66,6 @@ class Calendar(QtGui.QDialog):
 
 
 class NonValidEntryDialog(QtGui.QDialog):
-    '''
-    Warning for non-valid entries
-    '''
     def __init__(self, parent, transect):
         QtGui.QDialog.__init__(self, parent)
         # Set up the user interface from Designer.
@@ -85,17 +74,11 @@ class NonValidEntryDialog(QtGui.QDialog):
         self.transect = transect
 
     def closeEvent(self, event):
-        '''
-        Overwriting of close event
-        '''
         self.transect.valid = False
         event.accept()
 
 
 class MissingEntryDialog(QtGui.QDialog):
-    '''
-    Warning for missing entries
-    '''
     def __init__(self, parent):
         QtGui.QDialog.__init__(self, parent)
         # Set up the user interface from Designer.
@@ -104,9 +87,6 @@ class MissingEntryDialog(QtGui.QDialog):
 
 
 class UnsuccessfulEntryDialog(QtGui.QDialog):
-    '''
-    GUI-window to notify impossible entries
-    '''
     def __init__(self, mainFrame):
         QtGui.QDialog.__init__(self, mainFrame)
         # Set up the user interface from Designer.
@@ -115,9 +95,6 @@ class UnsuccessfulEntryDialog(QtGui.QDialog):
 
 
 class MissingTransectBeginnDialog(QtGui.QDialog):
-    '''
-    GUI-window for missing transect begin dialog
-    '''
     def __init__(self, mainFrame):
         QtGui.QDialog.__init__(self, mainFrame)
         self.ui = Ui_MissingTransectBeginnDialog()
@@ -125,9 +102,6 @@ class MissingTransectBeginnDialog(QtGui.QDialog):
 
 
 class MissingTransectEndDialog(QtGui.QDialog):
-    '''
-    GUI-window for missing transect end dialog
-    '''
     def __init__(self, mainFrame):
         QtGui.QDialog.__init__(self, mainFrame)
         self.ui = Ui_MissingTransectEndDialog()
@@ -135,9 +109,6 @@ class MissingTransectEndDialog(QtGui.QDialog):
 
 
 class InvalidKWEntryDialog(QtGui.QDialog):
-    '''
-    GUI-window for invalid course change dialog
-    '''
     def __init__(self, mainFrame):
         QtGui.QDialog.__init__(self, mainFrame)
         self.ui = Ui_InvalidKWEntryDialog()
@@ -145,9 +116,6 @@ class InvalidKWEntryDialog(QtGui.QDialog):
 
 
 class EditFrame(QtGui.QDialog):
-    '''
-    Opens the main GUI for editing mode
-    '''
     def __init__(self):
         QtGui.QDialog.__init__(self)
         # Set up the user interface from Designer.
@@ -156,9 +124,6 @@ class EditFrame(QtGui.QDialog):
 
 
 class DeleteEntryDialog(QtGui.QDialog):
-    '''
-    Opens the GUI) window for deletion
-    '''
     def __init__(self, parent):
         QtGui.QDialog.__init__(self, parent)
         self.ui = Ui_DeletionsDialog()
@@ -166,9 +131,6 @@ class DeleteEntryDialog(QtGui.QDialog):
 
 
 class WarnDialog(QtGui.QDialog):
-    '''
-    Opens the GUI for warnings
-    '''
     def __init__(self, parent):
         QtGui.QDialog.__init__(self, parent)
         self.ui = Ui_WarnDialog()
@@ -176,9 +138,6 @@ class WarnDialog(QtGui.QDialog):
 
 
 class TransectDeletionDialog(QtGui.QDialog):
-    '''
-    Opens the GUI for complicated warnings
-    '''
     def __init__(self, parent):
         QtGui.QDialog.__init__(self, parent)
         self.ui = Ui_TransectDeletionDialog()
